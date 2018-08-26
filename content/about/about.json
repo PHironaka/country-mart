@@ -1,0 +1,8 @@
+{
+  "title": "About",
+  "content": "content.md",
+  "gallery": [{
+    "image": "../images/gallery/xcc.jpg"
+  }
+  ]
+}
