@@ -1,5 +1,8 @@
 {
   "title": "Contact",
-  "content": "content.md"
- 
+  "content": "content.md",
+  "gallery": [{
+    "image": "../images/gallery/fireplace.jpg"
+  }
+  ]
 }

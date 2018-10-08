@@ -3,17 +3,14 @@
   "content": "content.md",
   "charityPhotos": [{
     "title": "P.S. ARTS",
-    "copy": "P.S. ARTS is a non-profit organization dedicated to restoring arts education in public schools by providing comprehensive, skills based, sequential classes in dance, music, theater and visual arts.",
-    "image": "../images/gallery/FY17_logo-01.png"
+    "copy": "P.S. ARTS is a non-profit organization dedicated to restoring arts education in public schools by providing comprehensive, skills based, sequential classes in dance, music, theater and visual arts."
   },
   {
     "title": "Vista Del Mar",
-    "copy": "Vista Del Mar Child and Family Services has been providing specialized services and therapeutic treatment to generations of Southern California children.",
-    "image": "../images/gallery/vista.jpg"
+    "copy": "Vista Del Mar Child and Family Services has been providing specialized services and therapeutic treatment to generations of Southern California children."
   },
   {
     "title": "Big Brothers",
-    "copy": "Big Brothers of Greater Los Angeles is a private, nonprofit, nonsectarian agency that provides support from positive male role models to fatherless boys through a variety of mentoring programs.",
-    "image": "../images/gallery/1190x4d8bb634e2579f75ecda677293d577d2ac967cfa.jpg"
+    "copy": "Big Brothers of Greater Los Angeles is a private, nonprofit, nonsectarian agency that provides support from positive male role models to fatherless boys through a variety of mentoring programs."
   }]
 }

@@ -1,10 +1,13 @@
 {
   "title": "Home",
   "content": "intro.md",
+  "hero": [{
+    "image": "../images/gallery/lucien.jpg"
+  }],
   "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
-    "image": "../images/gallery/xcc.jpg"
+    "title": "Tulips",
+    "copy": "a solo exhibition by Lucien Smit",
+    "image": "../images/gallery/lucien.jpg"
   },
   {
     "title": "Page Transitions",

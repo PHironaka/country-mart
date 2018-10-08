@@ -1,27 +1,18 @@
-EMAIL: 
-info@brentwoodcountrymart.com
-MANAGEMENT:
-Cindy McAfee
-225 26th Street
-Suite A
-Los Angeles, CA 90402
-Telephone: 310-458-6682
+851 Springs Fireplace Road 
+East Hampton, NY 11937
+631-324-4666 
+Fax: 631-614-4437
 
-OWNED & LEASED BY:
-Countrymart L.L.C.
-c/o J.S. Rosenfield & Co.
-921 Montana Avenue
-Los Angeles, CA 90403
+General Information:
+info@thefireplaceproject.com
 
-Telephone: 310-458-6682
-Facsimile: 310-458-6681
+Staff:
+Juliette McPeak
+juliette@thefireplaceproject.com
 
-FOR LEASING INFORMATION, CONTACT:
-James S. Rosenfield
-921 Montana Avenue
-Los Angeles, CA 90403
+Kevin Emerson
+kevin@thefireplaceproject.com
 
-Telephone: 310-458-6682
-Facsimile: 310-458-6681
-Email: jrosenfield@jsrosenfield.com
-www.jsrosenfield.com
+Open Saturdays and Sundays, 12 to 6PM
+And by appointment.
+

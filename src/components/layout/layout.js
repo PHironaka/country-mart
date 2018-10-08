@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-import Head from 'components/head';
-import Header from 'components/header';
+
 import Footer from 'components/footer';
 
 import 'reset.css.js';
 
 const Layout = ({ data, children }) => (
   <div>
-    <Head />
-    <Header title={data.site.siteMetadata.siteTitle} />
+   
+
     {children}
-    <Footer />
+  <Footer />  
   </div>
+
 );
 
 Layout.propTypes = {

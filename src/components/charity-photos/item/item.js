@@ -5,10 +5,7 @@ import { Copy , Fig } from './item.css';
 
 const Item = ({ title, copy, image }) => (
   <Fig>
-    <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
-    <figcaption>
       <Copy>{copy}</Copy>
-    </figcaption>
   </Fig>
 );
 

@@ -34,13 +34,7 @@ export const query = graphql`
       }
       charityPhotos {
         copy
-        image {
-          childImageSharp {
-            fluid( quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
+        
       }
     }
   }

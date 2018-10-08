@@ -1,38 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import posed from 'react-pose';
 import { Company } from './header.css';
 import { Container } from './header.css';
-import Logo from './bcm-logo.svg';
+import Logo from './fireplace.svg';
 import Nav from 'components/header/nav';
+import { stack as Menu } from 'react-burger-menu'
 
 // Example of a component-specific page transition
-const AnimatedContainer = posed.div({
-  enter: {
-    y: 0,
-    transition: {
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    y: '-100%',
-    transition: {
-      ease: 'easeInOut',
-    },
-  },
-});
+
 
 const Header = ({ title }) => (
-  <AnimatedContainer>
     <Container>
       <Link to="/">
     <Company src={Logo} alt="logo" />
       </Link>
 
       <Nav />
+       <Menu right>
+      <Link to="/">Home</Link>
+      <Link to="/">About</Link>
+      <Link to="/about">Contact</Link>
+      
+      </Menu>
     </Container>
-  </AnimatedContainer>
 );
 
 Header.propTypes = {

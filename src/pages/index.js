@@ -2,33 +2,52 @@ import React from 'react';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Title from 'components/title';
-import Gallery from 'components/gallery';
-import Modal from 'containers/modal';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
+import Exhibits from 'components/articleContent';
 
-export default ({ data }) => (
-  <Layout>
-    <Box>
+const IndexPage = ({data}) => {
+  const {edges: posts} = data.allMarkdownRemark;
+  return (
+    <Layout>
+        <Box>
       <Title tag="span" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
-      <Modal>
-        <video
-          src="https://i.imgur.com/gzFqNSW.mp4"
-          playsInline
-          loop
-          autoPlay
-          muted
-        />
-      </Modal>
-    </Box>
-    <Gallery items={data.homeJson.gallery} />
-    <div style={{ height: '50vh' }} />
-  </Layout>
-);
+    <div class="index-artists">
+
+      {posts
+        .filter(post => post.node.frontmatter.templateKey === 'exhibition')
+        .map (({node: post}) => {
+        const {frontmatter} = post;
+        return (
+
+          <div  class="artist">
+          <div  class="artist-copy">
+          <Exhibits >
+            <h2>
+              <Link to={frontmatter.path}>
+                {frontmatter.title}
+              </Link>
+            </h2>
+
+           <p> {frontmatter.showing}</p>
+</Exhibits>
+
+</div>
+
+<img src={post.frontmatter.image} alt={post.frontmatter.title} />
+          </div>
+        );
+      })}
+    </div>
+        </Box>
+
+    </Layout>
+  );
+};
 
 export const query = graphql`
-  query HomepageQuery {
+  query HomeQuery {
     homeJson {
       title
       content {
@@ -37,17 +56,26 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      gallery {
-        title
-        copy
-        image {
-          childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+  
+    }
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            title
+            showing
+            image 
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            path
           }
         }
       }
     }
   }
 `;
+
+export default IndexPage;

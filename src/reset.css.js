@@ -34,8 +34,7 @@ injectGlobal`
   }
 
   body {
-    font-family: Copperplate,Copperplate Gothic Light,fantasy; 
-
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.6rem;
     color: #000;
     background-color: #fff;
@@ -69,6 +68,10 @@ injectGlobal`
 
   a {
     color: ${accent};
+  }
+
+  img {
+    max-width:100%;
   }
 
   pre {

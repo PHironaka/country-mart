@@ -21,6 +21,14 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

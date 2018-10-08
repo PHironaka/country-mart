@@ -9,14 +9,18 @@ const Nav = () => (
         <Link to="/about">About</Link>
       </li>
       <li>
-       <Link to="/about">Directory</Link>
+       <Link to="/about">Artists</Link>
       </li>
       <li>
-       <Link to="/charity">Charity</Link>
+       <Link to="/directory">Exhibitions</Link>
       </li>
     
        <li>
        <Link to="/contact">Contact</Link>
+      </li>
+
+        <li>
+       <Link to="/press">Press</Link>
       </li>
     </ul>
   </Container>
