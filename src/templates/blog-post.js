@@ -4,7 +4,6 @@ import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
 import Layout from 'components/layout'
 import Box from 'components/box'
-import Img from 'gatsby-image';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,8 +20,8 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+    <img src={post.frontmatter.image} />
 
- <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
         <h2>{post.frontmatter.title}</h2>
         <p
           style={{
@@ -83,16 +82,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        image
         date(formatString: "MMMM DD, YYYY")
         hours
         showing
-        image {
-              childImageSharp {
-                fluid(maxWidth: 700) {
-                  ...GatsbyImageSharpFluid
-              }
-              }
-        }
       }
     }
   }

@@ -21,6 +21,12 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
@@ -37,6 +43,7 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],

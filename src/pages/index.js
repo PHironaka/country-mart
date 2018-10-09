@@ -4,6 +4,7 @@ import Box from 'components/box';
 import Title from 'components/title';
 import { Link, graphql } from 'gatsby';
 import Exhibits from 'components/articleContent';
+import Img from 'gatsby-image';
 
 const IndexPage = ({data}) => {
   const {edges: posts} = data.allMarkdownRemark;
@@ -35,7 +36,7 @@ const IndexPage = ({data}) => {
 
 </div>
 
-<img src={post.frontmatter.image} alt={post.frontmatter.title} />
+<Img fluid={frontmatter.cover.childImageSharp.fluid} />
           </div>
         );
       })}
@@ -67,7 +68,14 @@ export const query = graphql`
           frontmatter {
             title
             showing
-            image 
+            cover {
+              childImageSharp {
+              fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+               }
+              }
+            }
+            
             templateKey
             date(formatString: "MMMM DD, YYYY")
             path
