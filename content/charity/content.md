@@ -1,3 +1,3 @@
-The Brentwood Country Mart supports the work of several local charities. In particular, we support:
+Select publications The Fireplace Project has been featured in:
 
 

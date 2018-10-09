@@ -5,7 +5,7 @@ import { Company } from './header.css';
 import { Container } from './header.css';
 import Logo from './fireplace.svg';
 import Nav from 'components/header/nav';
-import { stack as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 
 // Example of a component-specific page transition
 
@@ -17,10 +17,10 @@ const Header = ({ title }) => (
       </Link>
 
       <Nav />
-       <Menu right>
-      <Link to="/">Home</Link>
-      <Link to="/">About</Link>
-      <Link to="/about">Contact</Link>
+       <Menu right isOpen={ false } >
+      <Link className="menu-item" to="/">Home</Link>
+      <Link className="menu-item" to="/about">About</Link>
+      <Link className="menu-item" to="/about">Contact</Link>
       
       </Menu>
     </Container>

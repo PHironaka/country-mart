@@ -5,8 +5,6 @@ export const Container = styled.header`
  display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 4rem;
-
-  /* Position and sizing of burger button */
 .bm-burger-button {
 display:none; 
  
@@ -40,9 +38,13 @@ display:none;
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #000;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+}
+
+.bm-menu-wrap {
+  top: 0;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -52,8 +54,8 @@ display:none;
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  color: #fff;
+  padding: 0;
 }
 
 /* Individual item */
@@ -63,7 +65,9 @@ display:none;
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: transparent !important;
+  left:0;
+  top:0;
 }
 
 

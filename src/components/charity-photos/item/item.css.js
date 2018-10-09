@@ -4,7 +4,7 @@ import MEDIA from 'helpers/mediaTemplates';
 
 export const Fig = styled.figure`
   display: grid;
-  grid-template-columns: 140px 1fr;
+  grid-template-columns:  1fr;
    grid-gap: 4rem;
   padding: 0 4rem;
   margin: 2rem 0;
