@@ -7,6 +7,7 @@ showing: 'August 10 through September 16, 2018'
 hours: 'M-F 8m-9pm'
 image: './img/tsabar.jpg'
 cover: 'tsabar.jpg'
+artist: 'Nama Tsabar'
 ---
 
 Tulip mania was a period in the Dutch Golden Age during which contract prices for some

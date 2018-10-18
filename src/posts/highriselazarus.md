@@ -1,16 +1,16 @@
 ---
-date: '2018-03-06'
-title: 'Tulips!'
-path: '/tulips'
+date: '2018-06-06'
+title: 'High Rise Lazarus '
+path: '/high-rise-lazarus'
 templateKey: exhibition
-showing: 'August 10 through September 16, 2018'
-hours: 'M-F 8am-9pm'
-image: './img/lucien.jpg'
-cover: 'lucien.jpg'
-artist: 'Lucien Smith'
+showing: 'July 15 – August 14, 2017'
+hours: 'opening reception Saturday June 9th, 6-8pm'
+image: './img/9999.jpg'
+cover: 'lazarus.jpg'
+artist: 'Jonah Freeman and Justin Lowe'
 ---
 
-T was a period in the Dutch Golden Age during which contract prices for some
+Tulip mania was a period in the Dutch Golden Age during which contract prices for some
 bulbs of the recently introduced and fashionable tulip reached extraordinarily high levels,
 and then dramatically collapsed in February 1637. It is generally considered the first
 recorded speculative bubble. In many ways, the tulip mania was more of a hitherto

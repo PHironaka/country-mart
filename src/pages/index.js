@@ -51,7 +51,7 @@ export const query = graphql`
   query HomeQuery {
     homeJson {
       title
-      content {
+      content  {
         childMarkdownRemark {
           html
           rawMarkdownBody
@@ -59,10 +59,9 @@ export const query = graphql`
       }
   
     }
-    allMarkdownRemark {
-      totalCount
+    allMarkdownRemark (limit: 7)  {
       edges {
-        node {
+        node  {
           id
           excerpt
           frontmatter {

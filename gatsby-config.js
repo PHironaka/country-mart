@@ -21,12 +21,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-json`,
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
@@ -35,6 +30,14 @@ module.exports = {
         name: 'posts'
       },
     },
+
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,5 +49,7 @@ module.exports = {
 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
+
   ],
 };

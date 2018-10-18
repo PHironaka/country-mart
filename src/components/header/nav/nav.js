@@ -20,7 +20,7 @@ const Nav = () => (
       </li>
 
         <li>
-       <Link to="/press">Press</Link>
+       <Link to="/contact">Press</Link>
       </li>
     </ul>
   </Container>
